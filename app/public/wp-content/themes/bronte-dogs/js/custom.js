@@ -7,6 +7,22 @@ jQuery(function ($) {
   });
 
   /*
+   * Close Menu
+   */
+  $("body").on("click", ".menu-close", function () {
+    $("body").removeClass("opened-menu opened opened-shim");
+  });
+
+  /*
+   * Close menu when clicking outside
+   */
+  $("body").on("click", ".side-menu", function (e) {
+    if (e.target === this) {
+      $("body").removeClass("opened-menu opened opened-shim");
+    }
+  });
+
+  /*
    * Sub Menus
    */
   $("body").on("click", ".sub-opener", function () {

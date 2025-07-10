@@ -1,25 +1,133 @@
+//==============================================
+// Header
+//==============================================
+header {
+    #primary {
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 42px 0 31px;
+
+        .logo-wrapper {
+            padding: 0;
+
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                max-height: 48px;
+                max-width: 220px;
+    
+                img {
+                    display: block;
+                    max-height: 31px;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+
+        .menu-wrapper {
+            padding: 0;
+        }
+    }
+
+    @media (max-width: $screen-sm) {
+        #primary {
+            align-items: flex-start;
+            a {
+                margin-bottom: 12px;
+                margin-right: 0;
+            }
+            .menu-header {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    @media (max-width: $screen-lg) {
+        #primary {
+            .menu-wrapper {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .menu-header {
+                display: none;
+            }
+        }
+    }
+}
+
+
 .side-menu {
     position: fixed;
     pointer-events: none;
-    top: 84px;
+    top: 0;
     right: 0;
     bottom: 0;
     z-index: 750;
     transition: all ease-in-out 0.4s;
-    // transform: translateX(110%);
-    width: 100vw;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
 
-    @media (min-width: $screen-xs) {
-        width: 410px;
-    }
+   
 
     .inner {
         background: $white;
-        height: calc(100vh - 72px);
-        padding: 30px 12px;
+        height: 100%;
+        padding: 0;
         overflow: auto;
-        // width: 100vw;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
     }
+
+    .mobile-menu-header {
+        padding: 20px 15px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: #f8f9fa;
+
+        .menu-close {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background: #333;
+                transition: all 0.3s ease;
+
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            &:hover {
+                span {
+                    background: $dark-green;
+                }
+            }
+        }
+    }
+
+
 }
 
 .opened {
@@ -36,24 +144,31 @@
     width: 40px;
     height: 40px;
     flex: 0 0 40px;
-    border: 1px solid $white;
+    border-radius: 4px;
     margin-left: auto;
+    background: transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: $dark-green;
+    }
 
     &:before,
     &:after {
         content: '';
         backface-visibility: hidden;
         transition: all 0.4s;
-        background: $white;
-        height: 1px;
-        left: 9px;
-        right: 9px;
+        background: $black;
+        height: 2px;
+        left: 8px;
+        right: 8px;
         top: 13px;
         position: absolute;
+        border-radius: 1px;
     }
 
     &:before {
-        box-shadow: 0 13px 0 0 $white;
+        box-shadow: 0 12px 0 0 $black;
     }
 
     &:after {
@@ -61,15 +176,51 @@
     }
 
     .opened & {
+        border-color: $dark-green;
+        background: rgba(0, 124, 186, 0.1);
+
         &:before {
             box-shadow: 0 0 0 0 transparent;
             transform: rotate(225deg);
             top: 19px;
+            background: $dark-green;
         }
 
         &:after {
             transform: rotate(315deg);
             top: 19px;
+            background: $dark-green;
+        }
+    }
+
+    @media (max-width: $screen-sm) {
+        width: 35px;
+        height: 35px;
+        flex: 0 0 35px;
+
+        &:before,
+        &:after {
+            left: 6px;
+            right: 6px;
+            top: 11px;
+        }
+
+        &:before {
+            box-shadow: 0 10px 0 0 #333;
+        }
+
+        &:after {
+            top: 16px;
+        }
+
+        .opened & {
+            &:before {
+                top: 16px;
+            }
+
+            &:after {
+                top: 16px;
+            }
         }
     }
 }

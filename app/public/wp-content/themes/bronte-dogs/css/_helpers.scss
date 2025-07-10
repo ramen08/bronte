@@ -67,6 +67,7 @@ $gutter-width: 16px; // space between columns
 
 .container {
   width: 100%;
+  max-width: 1072px;
   margin-right: auto;
   margin-left: auto;
   padding-right: $gutter-width;
@@ -76,26 +77,5 @@ $gutter-width: 16px; // space between columns
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -($gutter-width / 2);
-  margin-left: -($gutter-width / 2);
-}
-
-@for $i from 1 through $grid-columns {
-  .col-#{$i} {
-    flex: 0 0 percentage($i / $grid-columns);
-    max-width: percentage($i / $grid-columns);
-    padding-right: ($gutter-width / 2);
-    padding-left: ($gutter-width / 2);
-    box-sizing: border-box;
-  }
-}
-
-// Responsive: stack columns on small screens
-@media (max-width: 768px) {
-  @for $i from 1 through $grid-columns {
-    .col-#{$i} {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-  }
+  margin: 0;
 }
