@@ -1,0 +1,153 @@
+.hidden_label {
+    label {
+        display: none;
+    }
+}
+
+.gform_submission_error {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.gfield_validation_message {
+    position: relative;
+    top: 2px;
+    font-size: 12px;
+}
+
+.gform_footer {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+
+    img {
+        position: absolute;
+        right: -20px;
+        top: 40px;
+    }
+}
+
+.gform_fields {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+}
+
+.gfield {
+    padding: 0 12px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.gform_fields > .gfield:last-child {
+    margin-bottom: 6px;
+}
+
+.gfield_label {
+    font-size: 12px;
+    display: block;
+    margin-bottom: 2px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.gfield--width-half {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+
+    @media (min-width: $screen-sm) {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+}
+
+select,
+textarea,
+input[type='text'],
+input[type='email'] {
+    border: 0;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 0;
+    height: 40px;
+    padding: 0 0 0 26px;
+    font-family: $font-family;
+    font-weight: 400;
+    color: $grey;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    height: 88px;
+    resize: none;
+    padding-top: 8px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+.gfield_checkbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ginput_container_checkbox {
+    margin-top: 8px;
+}
+
+.gfield-choice-input {
+    display: none;
+
+    + label {
+        position: relative;
+        padding-left: 34px;
+        line-height: 26px;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+    }
+
+    &:checked + label {
+        &:after {
+            position: absolute;
+            content: '';
+            left: 3px;
+            top: 3px;
+            width: 16px;
+            height: 18px;
+        }
+    }
+}
+
+.gchoice {
+    margin-right: 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    background: transparent no-repeat calc(100% - 22px) 50%;
+    font-size: 16px;
+    font-family: $font-family;
+    padding-right: 15px;
+    border: 0;
+}

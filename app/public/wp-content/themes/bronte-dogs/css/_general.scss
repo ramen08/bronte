@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(
+        --wp-admin--admin-bar--height
+    ); /**
+    * @link https://make.wordpress.org/core/2022/01/07/theme-focused-changes-and-filters-in-wordpress-5-9/#adjusting-for-fixed-header-navigation
+    */
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: $font-family;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: $grey-vdark;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+a {
+    @include soft-movement(0.2s);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+main {
+    flex: 1;
+}
+
+svg,
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p {
+    img {
+        display: inline-block;
+    }
+}
+
+.text {
+    > :first-child {
+        margin-top: 0;
+    }
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    ol,
+    ul {
+        line-height: inherit;
+        padding-left: 20px;
+    }
+
+    li {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0;
+}
+
+.alignleft,
+img.alignleft {
+    @media (min-width: $screen-sm) {
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.alignright,
+img.alignright {
+    @media (min-width: $screen-sm) {
+        float: right;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.aligncenter,
+img.aligncenter {
+    margin: 1em auto;
+}

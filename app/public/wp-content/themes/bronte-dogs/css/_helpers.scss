@@ -1,0 +1,62 @@
+/*
+    Animations, Mixins etc.
+*/
+@mixin soft-movement($duration) {
+    transition: $duration ease-in-out;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.w100p {
+    width: 100%;
+}
+
+.h100p {
+    height: 100%;
+}
+
+.bg-white {
+    background-color: $white !important;
+}
+
+.c-white {
+    color: $white;
+}
+
+.posr {
+    position: relative;
+}
+
+.z-item {
+    z-index: 10;
+}
+
+.z-item-max {
+    z-index: 15;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+.lc {
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 15;
+}

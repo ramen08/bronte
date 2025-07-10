@@ -1,0 +1,32 @@
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+
+    &-main {
+        li {
+            margin-left: 30px;
+        }
+
+        a {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    &-footer {
+        flex-direction: column;
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        a {
+            line-height: 1.428;
+            font-weight: 400;
+        }
+    }
+}

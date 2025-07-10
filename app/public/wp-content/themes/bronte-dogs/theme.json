@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "reference": "https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/#settings",
+    "settings": {
+        "color": {
+            "custom": false,
+            "palette": [
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#fff"
+                }
+            ]
+        },
+        "spacing": {
+            "customMargin": false,
+            "customPadding": false,
+            "units": ["px"]
+        },
+        "blocks": {
+            "core/button": {
+                "border": {
+                    "customRadius": false
+                }
+            }
+        },
+        "typography": {
+            "customLineHeight": false,
+            "dropCap": false
+        },
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1200px"
+        }
+    }
+}
