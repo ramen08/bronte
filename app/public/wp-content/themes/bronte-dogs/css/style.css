@@ -79,6 +79,10 @@
   margin: 0;
 }
 
+.text-green {
+  color: #27AE60;
+}
+
 .btn,
 button,
 input[type=submit] {
@@ -816,14 +820,23 @@ body.home .header-text-image-section .container .img-col .header-image-wrapper i
 }
 
 body.home .review-slider-section {
-  margin: 50px 0;
+  padding: 50px 0;
+}
+@media (max-width: 992px) {
+  body.home .review-slider-section {
+    padding: 40px 0;
+  }
 }
 body.home .review-slider-section .review-slider-heading {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 1;
 }
 body.home .review-slider-section .review-slider-copy {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+}
+body.home .review-slider-section .swiper-wrapper {
+  align-items: stretch;
 }
 body.home .review-slider-section .review-card {
   background: #FCFCFE;
@@ -831,26 +844,125 @@ body.home .review-slider-section .review-card {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   width: 283px;
   padding: 24px;
-  min-height: 220px;
   display: flex;
   flex-direction: column;
+  height: auto;
+  background-image: url("/wp-content/uploads/2025/07/review-bg.png");
+  background-repeat: no-repeat;
+}
+body.home .review-slider-section .review-card .top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+body.home .review-slider-section .review-card .top-wrapper .review-stars {
+  display: flex;
+}
+body.home .review-slider-section .review-card .bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   justify-content: space-between;
 }
-body.home .review-slider-section .review-card .review-stars {
-  color: #27AE60;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
 body.home .review-slider-section .review-card .review-text {
-  font-size: 1em;
-  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 body.home .review-slider-section .review-card .review-author {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
 }
 body.home .review-slider-section .swiper-pagination {
   margin-top: 20px;
+}
+
+body.home .dog-daycare-overview-section {
+  padding: 50px;
+}
+@media (max-width: 992px) {
+  body.home .dog-daycare-overview-section {
+    padding: 40px 0;
+  }
+}
+body.home .dog-daycare-overview-section .container {
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 992px) {
+  body.home .dog-daycare-overview-section .container {
+    flex-direction: column;
+  }
+}
+body.home .dog-daycare-overview-section .container .price-col {
+  max-width: 381px;
+}
+@media (max-width: 992px) {
+  body.home .dog-daycare-overview-section .container .price-col {
+    max-width: 100%;
+  }
+}
+body.home .dog-daycare-overview-section .container .price-col h2 {
+  font-size: 24px;
+  line-height: 1;
+}
+body.home .dog-daycare-overview-section .container .price-col p {
+  margin: 0 0 28px;
+}
+body.home .dog-daycare-overview-section .container .price-col .pricing {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+body.home .dog-daycare-overview-section .container .price-col .btn {
+  border: 1px solid #27AE60;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  background-color: #27AE60;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: none;
+  padding: 13px 12px;
+}
+body.home .dog-daycare-overview-section .container .price-col .btn:hover {
+  background-color: #006E2F;
+  color: #fff;
+}
+body.home .dog-daycare-overview-section .container .features-col .features-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+@media (max-width: 992px) {
+  body.home .dog-daycare-overview-section .container .features-col .features-wrapper {
+    flex-direction: column;
+  }
+}
+body.home .dog-daycare-overview-section .container .features-col .features-wrapper .feature-item {
+  width: calc(50% - 24px);
+  display: flex;
+  gap: 14px;
+}
+@media (max-width: 992px) {
+  body.home .dog-daycare-overview-section .container .features-col .features-wrapper .feature-item {
+    width: 100%;
+  }
+}
+body.home .dog-daycare-overview-section .container .features-col .features-wrapper .feature-item .img-wrapper img {
+  min-width: 75px;
+}
+body.home .dog-daycare-overview-section .container .features-col .features-wrapper .feature-item .content-wrapper {
+  font-size: 16px;
+  line-height: 1.5;
+}
+body.home .dog-daycare-overview-section .container .features-col .features-wrapper .feature-item .content-wrapper h3 {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+body.home .dog-daycare-overview-section .container .features-col .features-wrapper .feature-item .content-wrapper p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

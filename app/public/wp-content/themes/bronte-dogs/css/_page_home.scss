@@ -3,6 +3,7 @@
 // - Header 
 // - Header Text Image
 // - Review Slider
+// - Dog Daycare Overview Section
 //==========================================
 
 //==========================================
@@ -131,15 +132,24 @@ body.home .header-text-image-section {
 // Home - Review Slider Section
 //==========================================
 body.home .review-slider-section {
-  margin: 50px 0;
+  padding: 50px 0;
+
+    @media (max-width: $screen-md ) {
+        padding: 40px 0;
+    }
 
   .review-slider-heading {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1;
   }
 
   .review-slider-copy {
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+  }
+
+  .swiper-wrapper {
+    align-items: stretch;
   }
 
   .review-card {
@@ -148,29 +158,146 @@ body.home .review-slider-section {
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     width: 283px;
     padding: 24px;
-    min-height: 220px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: auto;
+    background-image: url('/wp-content/uploads/2025/07/review-bg.png');
+    background-repeat: no-repeat;
 
-    .review-stars {
-      color: #27AE60;
-      font-size: 1.2em;
-      margin-bottom: 10px;
+    .top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+
+        .review-stars {
+            display: flex;
+        }
     }
 
+    .bottom-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+ 
+
     .review-text {
-      font-size: 1em;
-      margin-bottom: 16px;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 20px;
     }
 
     .review-author {
-      font-size: 1em;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: 700;
     }
   }
 
   .swiper-pagination {
     margin-top: 20px;
   }
+}
+
+//==========================================
+// Home - Dog Daycare Overview Section
+//==========================================
+body.home .dog-daycare-overview-section {
+    padding: 50px;
+
+    @media (max-width: $screen-md ) {
+        padding: 40px 0;
+    }
+    
+    .container {
+        display: flex;
+        gap: 40px;
+
+        @media (max-width: $screen-md ) {
+            flex-direction: column;
+        }
+
+        .price-col {
+            max-width: 381px;
+
+            @media (max-width: $screen-md ) {
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 1;
+            }
+
+            p {
+                margin: 0 0 28px;
+            }
+
+            .pricing {
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 28px;
+            }
+
+            .btn {
+                border: 1px solid $green;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1;
+                background-color: $green;
+                color: $white;
+                border-radius: 5px;
+                text-transform: none;
+                padding: 13px 12px;
+
+                &:hover {
+                    background-color: $dark-green;
+                    color: $white;
+                }
+            }
+        }
+
+        .features-col {
+            .features-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 48px;
+
+                @media (max-width: $screen-md ) {
+                    flex-direction: column;
+                }
+
+                .feature-item {
+                    width: calc(50% - 24px);
+                    display: flex;
+                    gap: 14px;
+
+                    @media (max-width: $screen-md ) {
+                        width: 100%;
+                    }
+
+                    .img-wrapper {
+                        img {
+                            min-width: 75px;
+                        }
+                    }
+
+                    .content-wrapper {
+                        font-size: 16px;
+                        line-height: 1.5;
+
+                        h3 {
+                            font-size: 15px;
+                            line-height: 1;
+                            margin-bottom: 8px;
+                        }
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

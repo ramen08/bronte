@@ -77,17 +77,22 @@
                                         $author = get_the_title(); // Use post title as author
                                 ?>
                                     <div class="swiper-slide review-card">
-                                        <div class="review-stars">
-                                            <?php
-                                            // Always show 5 filled SVG stars
-                                            for ($i = 1; $i <= 5; $i++) {
-                                                echo '<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#27AE60"/></svg>';
-                                            }
-                                            ?>
+                                        <div class="top-wrapper">
+                                            <div class="review-stars">
+                                                <?php
+                                                // Always show 5 filled SVG stars
+                                                for ($i = 1; $i <= 5; $i++) {
+                                                    echo '<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#27AE60"/></svg>';
+                                                }
+                                                ?>
+                                            </div>
                                             <img src="https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png" alt="Google" style="height:20px;vertical-align:middle;" />
+                                            
                                         </div>
-                                        <div class="review-text"><?= wp_kses_post($review_text); ?></div>
-                                        <div class="review-author">- <strong><?= esc_html($author); ?></strong></div>
+                                        <div class="bottom-wrapper">
+                                            <div class="review-text"><?= wp_kses_post($review_text); ?></div>
+                                            <div class="review-author">- <strong><?= esc_html($author); ?></strong></div>
+                                        </div>
                                     </div>
                                 <?php
                                     endwhile;
@@ -107,6 +112,68 @@
                 
         
             <?php endif; ?>
+        <?php endif; ?>
+
+        <?php if (get_row_layout() === 'dog_daycare_overview_section'): ?>
+            <?php
+                $heading = get_sub_field('heading');
+                $description = get_sub_field('description');
+                $full_day_price = get_sub_field('full_day_price');
+                $half_day_price = get_sub_field('half_day_price');
+                $cta_button_text = get_sub_field('cta_button_text');
+                $cta_button_link = get_sub_field('cta_button_link');
+                $features = get_sub_field('features');
+            ?>
+            <section class="dog-daycare-overview-section">
+                <div class="container">
+                    <div class="col price-col">
+                        <?php if ($heading): ?>
+                            <h2><?= wp_kses_post($heading); ?></h2>
+                        <?php endif; ?>
+                        <?php if ($description): ?>
+                            <p><?= wp_kses_post($description); ?></p>
+                        <?php endif; ?>
+
+                    <div class="pricing">
+                        <?php if ($full_day_price): ?>
+                            Full Day: <span class="text-green"><?= wp_kses_post($full_day_price); ?></span>
+                        <?php endif; ?>
+                        |
+                        <?php if ($half_day_price): ?>
+                            Half Day: <span class="text-green"><?= wp_kses_post($half_day_price); ?></span>
+                        <?php endif; ?>
+                    </div>
+
+                    <?php if ($cta_button_text && $cta_button_link): ?>
+                        <a href="<?= esc_url($cta_button_link); ?>" class="btn"><?= esc_html($cta_button_text); ?></a>
+                    <?php endif; ?>
+                    </div>
+
+                    <div class="col features-col">
+                        <?php if ($features): ?>
+                            <div class="features-wrapper">
+                                <?php foreach ($features as $feature): ?>
+                                    <div class="feature-item">
+                                        <?php if (!empty($feature['icon'])): ?>
+                                            <div class="img-wrapper">
+                                                <img src="<?= esc_url($feature['icon']['url']); ?>" alt="">
+                                            </div>
+                                        <?php endif; ?>
+                                        <div class="content-wrapper">
+                                            <?php if (!empty($feature['title'])): ?>
+                                                <h3><?= esc_html($feature['title']); ?></h3>
+                                            <?php endif; ?>
+                                            <?php if (!empty($feature['description'])): ?>
+                                                <p><?= esc_html($feature['description']); ?></p>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </section>
         <?php endif; ?>
 
     <?php endwhile; ?>

@@ -44,14 +44,17 @@ jQuery(function ($) {
 });
 
 jQuery(document).ready(function() {
+    // Set fixed width for all review slides via JS to ensure Swiper loop works with slidesPerView: 'auto'
+
     if (window.Swiper) {
         new Swiper('.review-swiper', {
             slidesPerView: 'auto',
             spaceBetween: 17,
-            loop: true,
+            loop: false,
             autoplay: {
-                delay: 3500,
+                delay: 5000,
                 disableOnInteraction: false,
+                pauseOnMouseEnter: false,
             },
         });
     }
