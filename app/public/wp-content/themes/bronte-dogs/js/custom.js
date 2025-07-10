@@ -42,3 +42,17 @@ jQuery(function ($) {
   //   }
   // });
 });
+
+jQuery(document).ready(function() {
+    if (window.Swiper) {
+        new Swiper('.review-swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 17,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+        });
+    }
+});

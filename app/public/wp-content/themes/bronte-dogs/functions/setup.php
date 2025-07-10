@@ -148,3 +148,12 @@ add_filter('allowed_block_types_all', function ($allowed_block_types, $post) {
         'gravityforms/form'
     ];
 }, 10, 2);
+
+/**
+ * Enqueue Swiper Slider
+ */
+function bronte_enqueue_swiper() {
+    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'bronte_enqueue_swiper');

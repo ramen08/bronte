@@ -1,1 +1,26 @@
 [10-Jul-2025 01:13:43 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-includes\class-wp-customize-widgets.php on line 926
+[10-Jul-2025 03:06:58 UTC] PHP Warning:  Undefined array key "url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:06:58 UTC] PHP Warning:  Undefined array key "target" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:06:58 UTC] PHP Warning:  Undefined array key "label" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 26
+[10-Jul-2025 03:06:58 UTC] PHP Warning:  Undefined array key "url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:06:58 UTC] PHP Warning:  Undefined array key "target" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:06:58 UTC] PHP Warning:  Undefined array key "label" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 26
+[10-Jul-2025 03:07:44 UTC] PHP Warning:  Undefined array key "url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:07:44 UTC] PHP Warning:  Undefined array key "label" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 26
+[10-Jul-2025 03:07:44 UTC] PHP Warning:  Undefined array key "url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:07:44 UTC] PHP Warning:  Undefined array key "label" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 26
+[10-Jul-2025 03:08:29 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:08:29 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:08:59 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:08:59 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 25
+[10-Jul-2025 03:09:57 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 17
+[10-Jul-2025 03:09:57 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 17
+[10-Jul-2025 03:10:38 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 17
+[10-Jul-2025 03:10:38 UTC] PHP Warning:  Undefined array key "button_url" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 17
+[10-Jul-2025 03:45:07 UTC] PHP Parse error:  syntax error, unexpected token "echo" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 15
+[10-Jul-2025 03:45:12 UTC] PHP Parse error:  syntax error, unexpected token "echo" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 15
+[10-Jul-2025 04:59:11 UTC] PHP Parse error:  syntax error, unexpected token "elseif" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 47
+[10-Jul-2025 04:59:36 UTC] PHP Parse error:  syntax error, unexpected token "if", expecting ":" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 47
+[10-Jul-2025 04:59:41 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting "elseif" or "else" or "endif" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 126
+[10-Jul-2025 04:59:53 UTC] PHP Parse error:  syntax error, unexpected token "elseif" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 47
+[10-Jul-2025 05:00:14 UTC] PHP Parse error:  syntax error, unexpected token "endwhile", expecting "elseif" or "else" or "endif" in C:\Users\Ramuel\Local Sites\bronte\app\public\wp-content\themes\bronte-dogs\templates\home.php on line 126

@@ -109,7 +109,7 @@
                 &:hover,
                 &:focus {
                     a {
-                        background: darken($green, 7%);
+                        background: $dark-green;
                         color: $white;
                     }
                 }
@@ -161,7 +161,7 @@
                 &:hover,
                 &:focus {
                     a {
-                        background: darken($green, 7%);
+                        background: $dark-green;
                         color: $white;
                     }
                 }

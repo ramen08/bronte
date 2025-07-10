@@ -1,2 +1,176 @@
-body.home {
+//==========================================
+// Home Contet
+// - Header 
+// - Header Text Image
+// - Review Slider
+//==========================================
+
+//==========================================
+// Home - Header 
+//==========================================
+body.home header {
+    background: #f6f6f8;
+}
+
+//==========================================
+// Home - Header Text Image
+//==========================================
+body.home .header-text-image-section {
+    background: #f6f6f8;
+    padding-bottom: 46px;
+
+    .container {
+        display: flex;
+        gap: 76px;
+        
+        @media (max-width: $screen-md ) {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .text-col {
+            max-width: 416px;
+
+            @media (max-width: $screen-md ) {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 48px;
+                color: $green;
+                font-weight: 700;
+                line-height: 1.06;
+                margin-bottom: 24px;
+
+                @media (max-width: $screen-md ) {
+                    font-size: 38px;
+                }
+
+                .highlight {
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        background-image: url('/wp-content/uploads/2025/07/highlight-removebg.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 100%;
+                        height: 100%;
+                        display: inline-block;
+                        position: absolute;
+                        left: 0;
+                        top: 16px;
+                    }
+                }
+            }
+
+            .copy {
+                font-size: 13px;
+                line-height: 100%;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+
+            .buttons {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 14px;
+
+                .btn {
+                    border: 1px solid $green;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 1;
+                    background-color: $green;
+                    color: $white;
+                    border-radius: 5px;
+                    text-transform: none;
+                    padding: 13px 9px;
+
+                    &:nth-child(even) {
+                        background-color: transparent;
+                        color: $green;
+                    }
+
+                    &:hover {
+                        background-color: $dark-green;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .img-col {
+            @media (max-width: $screen-md ) {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .header-image-wrapper {
+                width: 112.1%;
+
+                @media (max-width: $screen-md ) {
+                    width: 100%;
+                }
+
+                img {
+                    aspect-ratio: 680 / 453;
+                    border-radius: 5px;
+
+                    @media (max-width: $screen-md ) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//==========================================
+// Home - Review Slider Section
+//==========================================
+body.home .review-slider-section {
+  margin: 50px 0;
+
+  .review-slider-heading {
+    margin-bottom: 10px;
+  }
+
+  .review-slider-copy {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .review-card {
+    background: $grey;
+    border-radius: 7px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    width: 283px;
+    padding: 24px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .review-stars {
+      color: #27AE60;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      font-size: 1em;
+      margin-bottom: 16px;
+    }
+
+    .review-author {
+      font-size: 1em;
+      font-weight: 600;
+    }
+  }
+
+  .swiper-pagination {
+    margin-top: 20px;
+  }
 }
