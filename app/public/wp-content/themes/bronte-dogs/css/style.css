@@ -964,5 +964,35 @@ body.home .dog-daycare-overview-section .container .features-col .features-wrapp
 body.home .dog-daycare-overview-section .container .features-col .features-wrapper .feature-item .content-wrapper p {
   margin: 0;
 }
+body.home .dog-daycare-overview-section .arrow-and-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+body.home .dog-daycare-overview-section .arrow-and-box .arrow {
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 28px;
+}
+body.home .dog-daycare-overview-section .arrow-and-box .arrow svg {
+  display: block;
+}
+body.home .dog-daycare-overview-section .arrow-and-box .info-box {
+  width: 356px;
+  height: 58px;
+  background: #EDEDED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  body.home .dog-daycare-overview-section .arrow-and-box .info-box {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
