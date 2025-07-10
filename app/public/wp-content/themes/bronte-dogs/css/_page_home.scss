@@ -62,7 +62,11 @@ body.home .header-text-image-section {
                         display: inline-block;
                         position: absolute;
                         left: 0;
-                        top: 16px;
+                        top: 23px;
+
+                        @media (max-width: $screen-md ) {
+                            top: 18px;
+                        }
                     }
                 }
             }
@@ -88,7 +92,7 @@ body.home .header-text-image-section {
                     color: $white;
                     border-radius: 5px;
                     text-transform: none;
-                    padding: 13px 9px;
+                    padding: 13px 18px;
 
                     &:nth-child(even) {
                         background-color: transparent;
@@ -286,6 +290,11 @@ body.home .dog-daycare-overview-section {
                     .content-wrapper {
                         font-size: 16px;
                         line-height: 1.5;
+                        min-width: 231px;
+
+                        @media (max-width: $screen-lg ) {
+                            min-width: auto;
+                        }
 
                         h3 {
                             font-size: 15px;

@@ -97,7 +97,7 @@
                     background: $green;
                     color: $white !important;
                     border-radius: 6px;
-                    padding: 13px 15px;
+                    padding: 14px 18px;
                     font-weight: 700;
                     text-transform: uppercase;
                     transition: background 0.2s, color 0.2s;
@@ -123,7 +123,7 @@
         @media (max-width: $screen-md ) {
             flex-direction: column;
         }
-        
+
         li {
 
             &.menu-item--button {
@@ -177,7 +177,7 @@
                     background: $green;
                     color: $white !important;
                     border-radius: 6px;
-                    padding: 13px 15px;
+                    padding: 14px 18px;
                     font-weight: 700;
                     text-transform: uppercase;
                     transition: background 0.2s, color 0.2s;
