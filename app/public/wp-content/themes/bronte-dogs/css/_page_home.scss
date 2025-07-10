@@ -1,9 +1,10 @@
 //==========================================
-// Home Contet
+// Home Content
 // - Header 
 // - Header Text Image
 // - Review Slider
 // - Dog Daycare Overview Section
+// - Fullwidth Image
 //==========================================
 
 //==========================================
@@ -334,3 +335,23 @@ body.home .dog-daycare-overview-section {
     }
   }
 }
+
+//==========================================
+// Home - Fullwidth Image
+//==========================================
+.fullwidth-image-section {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 42px;
+  margin-bottom: -40px;
+
+  .fullwidth-image {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+

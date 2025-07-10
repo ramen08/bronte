@@ -24,8 +24,9 @@ add_theme_support('title-tag');
  * Enqueue Stylesheets
  */
 add_action('wp_enqueue_scripts', function () {
-    // Google Fonts - Montserrat
-    wp_enqueue_style('google-fonts-montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), null);
+    
+    // Google Fonts
+    wp_enqueue_style('google-fonts-nunito-sans', 'https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap', array(), null);
     
     // Note: Bootstrap Grid only includes classes like col-*, m-md-3 and pt-2
     wp_enqueue_style('bootstrap_grid', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap-grid.min.css');

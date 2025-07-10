@@ -35,8 +35,6 @@
                         $site_logo = function_exists('get_field') ? get_field('site_logo', 'option') : false;
                         if ($site_logo && !empty($site_logo['url'])): ?>
                             <img src="<?= esc_url($site_logo['url']); ?>" alt="<?= esc_attr($site_logo['alt'] ?: get_bloginfo('name')); ?>">
-                        <?php else: ?>
-                            <img src="<?= get_stylesheet_directory_uri() ?>/images/logo.svg" alt="<?= esc_attr(get_bloginfo('name')); ?>">
                         <?php endif; ?>
                     </a>
                 </div>

@@ -118,15 +118,43 @@
     }
 
     &-footer {
-        flex-direction: column;
-        li {
-            margin-bottom: 10px;
-            position: relative;
-        }
+        gap: 14px;
 
-        a {
-            line-height: 1.428;
-            font-weight: 400;
+        @media (max-width: $screen-md ) {
+            flex-direction: column;
+        }
+        
+        li {
+
+            &.menu-item--button {
+                a {
+                    border: 1px solid $green;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 1;
+                    background-color: $green;
+                    color: $white;
+                    border-radius: 5px;
+                    text-transform: none;
+                    padding: 13px 18px;
+                    display: inline-block;
+
+                    &:hover {
+                        background-color: $dark-green;
+                        color: $white;
+                    }
+                }
+
+                &:nth-child(even) a {
+                    background-color: transparent;
+                    color: $green;
+
+                    &:hover {
+                        background-color: $dark-green;
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 

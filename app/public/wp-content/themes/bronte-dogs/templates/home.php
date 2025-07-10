@@ -188,6 +188,18 @@
             </section>
         <?php endif; ?>
 
+        <?php if (get_row_layout() === 'fullwidth_image'): ?>
+            <?php
+                $image = get_sub_field('image');
+            ?>
+            <section class="fullwidth-image-section">
+            <img 
+                src="<?= esc_url($image['url']); ?>" 
+                alt="<?= esc_attr($image['alt'] ?? ''); ?>" 
+                class="fullwidth-image"
+            />
+            </section>
+        <?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
 
