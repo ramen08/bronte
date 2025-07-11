@@ -14,9 +14,11 @@
 @import 'header';
 @import 'footer';
 @import 'forms';
+@import 'sections';
 
 /*
 	Page-specific styling. Please use as little as possible to ensure DRYness.
 */
 
 @import 'page_home';
+@import 'page_contact_us';

@@ -402,7 +402,7 @@ header #primary {
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
-  padding: 42px 0 31px;
+  padding: 42px 0 25px;
 }
 header #primary .logo-wrapper {
   padding: 0;
@@ -759,6 +759,79 @@ select {
   border: 0;
 }
 
+.review-slider-section {
+  padding: 50px 0;
+}
+@media (max-width: 992px) {
+  .review-slider-section {
+    padding: 40px 0;
+  }
+}
+.review-slider-section .review-slider-heading {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 1;
+}
+.review-slider-section .review-slider-copy {
+  margin-bottom: 27px;
+}
+.review-slider-section .swiper-wrapper {
+  align-items: stretch;
+}
+.review-slider-section .review-card {
+  background: #FCFCFE;
+  border-radius: 7px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  width: 283px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-image: url("/wp-content/uploads/2025/07/review-bg.png");
+  background-repeat: no-repeat;
+}
+.review-slider-section .review-card .top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.review-slider-section .review-card .top-wrapper .review-stars {
+  display: flex;
+}
+.review-slider-section .review-card .bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.review-slider-section .review-card .review-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.review-slider-section .review-card .review-author {
+  font-size: 16px;
+  font-weight: 700;
+}
+.review-slider-section .swiper-pagination {
+  margin-top: 20px;
+}
+
+.fullwidth-image-section {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 42px;
+  margin-bottom: -40px;
+}
+.fullwidth-image-section .fullwidth-image {
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
 /*
 	Page-specific styling. Please use as little as possible to ensure DRYness.
 */
@@ -768,6 +841,7 @@ body.home header {
 
 body.home .header-text-image-section {
   background: #f6f6f8;
+  padding-top: 6px;
   padding-bottom: 46px;
 }
 body.home .header-text-image-section .container {
@@ -873,64 +947,6 @@ body.home .header-text-image-section .container .img-col .header-image-wrapper i
   body.home .header-text-image-section .container .img-col .header-image-wrapper img {
     width: 100%;
   }
-}
-
-body.home .review-slider-section {
-  padding: 50px 0;
-}
-@media (max-width: 992px) {
-  body.home .review-slider-section {
-    padding: 40px 0;
-  }
-}
-body.home .review-slider-section .review-slider-heading {
-  margin-bottom: 8px;
-  font-size: 24px;
-  line-height: 1;
-}
-body.home .review-slider-section .review-slider-copy {
-  margin-bottom: 27px;
-}
-body.home .review-slider-section .swiper-wrapper {
-  align-items: stretch;
-}
-body.home .review-slider-section .review-card {
-  background: #FCFCFE;
-  border-radius: 7px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  width: 283px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  background-image: url("/wp-content/uploads/2025/07/review-bg.png");
-  background-repeat: no-repeat;
-}
-body.home .review-slider-section .review-card .top-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-body.home .review-slider-section .review-card .top-wrapper .review-stars {
-  display: flex;
-}
-body.home .review-slider-section .review-card .bottom-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-}
-body.home .review-slider-section .review-card .review-text {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-body.home .review-slider-section .review-card .review-author {
-  font-size: 16px;
-  font-weight: 700;
-}
-body.home .review-slider-section .swiper-pagination {
-  margin-top: 20px;
 }
 
 body.home .dog-daycare-overview-section {
@@ -1055,21 +1071,6 @@ body.home .dog-daycare-overview-section .arrow-and-box .info-box {
   body.home .dog-daycare-overview-section .arrow-and-box .info-box {
     width: 100%;
   }
-}
-
-.fullwidth-image-section {
-  width: 100%;
-  overflow: hidden;
-  padding-top: 42px;
-  margin-bottom: -40px;
-}
-.fullwidth-image-section .fullwidth-image {
-  width: 100vw;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
