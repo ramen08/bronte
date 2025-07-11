@@ -4,6 +4,7 @@
 // - Review Slider
 // - Dog Daycare Overview Section
 // - Fullwidth Image
+// - Contact Form Section
 //==========================================
 
 //==========================================
@@ -353,5 +354,66 @@
       display: block;
       object-fit: cover;
       margin: 0 auto;
+    }
+}
+
+//==========================================
+// Contact Form Section
+//==========================================
+.contact-form-section {
+    padding-bottom: 16px;
+
+    .container {
+
+        .inner-wrapper {
+            background: #FFFFFF;
+            box-shadow: 0px 184.847px 73.7522px rgba(0, 0, 0, 0.01), 0px 103.627px 62.5494px rgba(0, 0, 0, 0.02), 0px 45.7451px 45.7451px rgba(0, 0, 0, 0.03), 0px 11.2029px 25.2065px rgba(0, 0, 0, 0.03);
+            border-radius: 8px;
+            padding: 30px;
+            gap: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: $screen-md ) {
+                flex-direction: column;
+            }
+
+            .contact-form-info {
+                max-width: 428px;
+                font-size: 16.8px;
+                line-height: 1.55;
+                width: 100%;
+
+                @media (max-width: $screen-md ) {
+                    max-width: 100%;
+                }
+
+                .contact-form-image {
+                    margin-bottom: 24px;
+                }
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 1;
+                    margin-bottom: 16px;
+                    max-width: 365px;
+
+                    @media (max-width: $screen-md ) {
+                        max-width: 100%;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .contact-form-fields {
+                max-width: 465px;
+                width: 100%;
+
+                @media (max-width: $screen-md ) {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }

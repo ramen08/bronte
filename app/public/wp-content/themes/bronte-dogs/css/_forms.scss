@@ -26,12 +26,30 @@
         right: -20px;
         top: 40px;
     }
+
+    input[type=submit].gform_button {
+        background-color: $green !important;
+        border: 1px solid $green !important;
+        color: $white !important;
+        text-transform: uppercase !important;
+        font-weight: 700 !important;
+        padding: 11px 10px !important;
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+
+        &:hover {
+            background-color: $dark-green !important;
+            border: 1px solid $dark-green !important;
+        }
+    }
 }
 
 .gform_fields {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -12px;
+    margin: 0;
+    column-gap: 17px !important;
+    row-gap: 19px !important;
 }
 
 .gfield {
@@ -50,6 +68,7 @@
     margin-bottom: 2px;
     line-height: 18px;
     font-weight: 300;
+    display: none !important;
 }
 
 .gfield--width-half {
@@ -66,17 +85,19 @@
 select,
 textarea,
 input[type='text'],
-input[type='email'] {
-    border: 0;
+input[type='email'],
+input[type='tel'] {
+    border: 1px solid rgba(96, 100, 112, 0.3) !important;
     display: block;
     width: 100%;
-    font-size: 18px;
-    border-radius: 0;
-    height: 40px;
-    padding: 0 0 0 26px;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    border-radius: 0 !important;
+    height: 40px !important;
+    padding: 5px 17px !important;
     font-family: $font-family;
     font-weight: 400;
-    color: $grey;
+    color: #A2A9BD !important;
 
     &:focus {
         outline: none;
@@ -84,9 +105,9 @@ input[type='email'] {
 }
 
 textarea {
-    height: 88px;
-    resize: none;
-    padding-top: 8px;
+    height: 160px !important;
+    resize: none !important;
+    padding: 9px 17px !important;
 }
 
 fieldset {

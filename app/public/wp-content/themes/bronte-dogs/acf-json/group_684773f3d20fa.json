@@ -512,7 +512,7 @@
                             "label": "Image",
                             "name": "image",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "image",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -521,12 +521,17 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "default_value": "",
-                            "maxlength": "",
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
                             "allow_in_bindings": 0,
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
+                            "preview_size": "medium"
                         },
                         {
                             "key": "field_6870637cc1a70",
@@ -619,5 +624,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1752195989
+    "modified": 1752197397
 }

@@ -636,11 +636,27 @@ footer .container .footer-copyright {
   right: -20px;
   top: 40px;
 }
+.gform_footer input[type=submit].gform_button {
+  background-color: #27AE60 !important;
+  border: 1px solid #27AE60 !important;
+  color: #fff !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  padding: 11px 10px !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+.gform_footer input[type=submit].gform_button:hover {
+  background-color: #006E2F !important;
+  border: 1px solid #006E2F !important;
+}
 
 .gform_fields {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -12px;
+  margin: 0;
+  column-gap: 17px !important;
+  row-gap: 19px !important;
 }
 
 .gfield {
@@ -659,6 +675,7 @@ footer .container .footer-copyright {
   margin-bottom: 2px;
   line-height: 18px;
   font-weight: 300;
+  display: none !important;
 }
 
 .gfield--width-half {
@@ -676,29 +693,32 @@ footer .container .footer-copyright {
 select,
 textarea,
 input[type=text],
-input[type=email] {
-  border: 0;
+input[type=email],
+input[type=tel] {
+  border: 1px solid rgba(96, 100, 112, 0.3) !important;
   display: block;
   width: 100%;
-  font-size: 18px;
-  border-radius: 0;
-  height: 40px;
-  padding: 0 0 0 26px;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  border-radius: 0 !important;
+  height: 40px !important;
+  padding: 5px 17px !important;
   font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #FCFCFE;
+  color: #A2A9BD !important;
 }
 select:focus,
 textarea:focus,
 input[type=text]:focus,
-input[type=email]:focus {
+input[type=email]:focus,
+input[type=tel]:focus {
   outline: none;
 }
 
 textarea {
-  height: 88px;
-  resize: none;
-  padding-top: 8px;
+  height: 160px !important;
+  resize: none !important;
+  padding: 9px 17px !important;
 }
 
 fieldset {
@@ -1063,6 +1083,60 @@ select {
   display: block;
   object-fit: cover;
   margin: 0 auto;
+}
+
+.contact-form-section {
+  padding-bottom: 16px;
+}
+.contact-form-section .container .inner-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 184.847px 73.7522px rgba(0, 0, 0, 0.01), 0px 103.627px 62.5494px rgba(0, 0, 0, 0.02), 0px 45.7451px 45.7451px rgba(0, 0, 0, 0.03), 0px 11.2029px 25.2065px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  padding: 30px;
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .contact-form-section .container .inner-wrapper {
+    flex-direction: column;
+  }
+}
+.contact-form-section .container .inner-wrapper .contact-form-info {
+  max-width: 428px;
+  font-size: 16.8px;
+  line-height: 1.55;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .contact-form-section .container .inner-wrapper .contact-form-info {
+    max-width: 100%;
+  }
+}
+.contact-form-section .container .inner-wrapper .contact-form-info .contact-form-image {
+  margin-bottom: 24px;
+}
+.contact-form-section .container .inner-wrapper .contact-form-info h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 16px;
+  max-width: 365px;
+}
+@media (max-width: 992px) {
+  .contact-form-section .container .inner-wrapper .contact-form-info h2 {
+    max-width: 100%;
+    font-size: 24px;
+  }
+}
+.contact-form-section .container .inner-wrapper .contact-form-fields {
+  max-width: 465px;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .contact-form-section .container .inner-wrapper .contact-form-fields {
+    max-width: 100%;
+  }
 }
 
 /*
