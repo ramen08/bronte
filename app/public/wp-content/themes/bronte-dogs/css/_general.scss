@@ -25,6 +25,17 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 6px;
+        height: 100%;
+        background-color: $green;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 a {
